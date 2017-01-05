@@ -16,9 +16,6 @@ while ($weekendDay<=$daysOfTheYear){
 	$weekend[] = $weekendDay;
 	$weekendDay += $day;
 }
-echo '<pre>';
-print_r ($weekend);
-echo '</pre>';
 while ($i<=$y){
 	if ($i >= $y){break;}
 	$strike = $ppa[$i]['value'];
@@ -36,8 +33,5 @@ while ($i<=$y){
 $input = array_unique($array);
 $strikearray = array_diff($input, $weekend);
 $strikeAmount = count($strikearray);
-echo '<pre>';
-print_r ($strikearray);
-echo '</pre>';
 echo 'Всього страйків за рік - ' . $strikeAmount;
 ?>

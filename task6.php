@@ -118,7 +118,7 @@
 						<input type="text" id="intK" name="intK" class="form-control" placeholder="Введіть ім'я">
 					</div>
 					<div class="form-group">
-						<!--<input type="button" id="send" name="send" value="Внести">-->
+						<input type="button" id="send" name="send" value="Внести">
 						<input type="button" id="out" name="out" value="Результат">
 						<div id="result"></div>
 					</div>
@@ -142,7 +142,7 @@
 
 					<script>            
 					$(document).ready(function(){  
-								  /* $("#send").click(function(){
+								   $("#send").click(function(){
 									var N=$("#intN").val();
 									var K=$("#intK").val();
 									
@@ -155,7 +155,7 @@
 													 $("#result").html(data);  
 												}
 										   });  
-									});*/
+									});
 									
 									$("#out").click(function(){
 											$.ajax({  

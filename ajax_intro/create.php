@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 $k = $_POST['k'];
 $y = 1;
 printf ("<div class='form-group'>

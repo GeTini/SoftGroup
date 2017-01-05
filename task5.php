@@ -103,8 +103,8 @@
 				
 				<?php
 					$originalText = $_POST['intN'];
-
-					$wordArray = str_word_count( $originalText, 1 );
+					
+					$wordArray = preg_split('/[\s,]+/', $originalText);
 
 					foreach ( $wordArray as $currentkey => $currentWord ) {
 

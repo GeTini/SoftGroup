@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	
 </head>
 <body>
 <div class="container"> <!-- header container -->
@@ -77,7 +78,7 @@
 				<form role="form" name="form1"  method="post" action="" id="form1">
 					<div class="form-group">
 						<label for="K">Введіть кількість політичних партій більше 1, менше 100:</label>
-						<input type="text" id="K" name="K" class="form-control" placeholder="Введіть к-сть партій">
+						<input type="text" id="K" name="K" class="form-control" value="2">
 					</div>
 					<div class="form-group">
 						<input type="submit" value="Створити">
@@ -88,7 +89,7 @@
 					$y = 1;
 					printf ("<div class='form-group'>
 						<label for='N'>Введіть кількість днів у році більше 1, менше 1 000 000:</label>
-						<input type='text' id='N' name='N' class='form-control' placeholder='Введіть к-сть днів'>
+						<input type='text' id='N' name='N' class='form-control' value='2'>
 					");
 					while ($y < $k+1):
 						printf ("<label for='a$y'> Введіть перший день страйку $y партії: </label>
